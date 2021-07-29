@@ -5,6 +5,7 @@ cd build
 
 cmake ${CMAKE_ARGS} -GNinja .. \
       -DCMAKE_BUILD_TYPE=Release \
+      -DBUILD_EXAMPLES:BOOL=ON \
       -DBUILD_TESTING=ON
 
 cmake --build . --config Release
