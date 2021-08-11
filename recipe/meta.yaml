@@ -1,5 +1,5 @@
 {% set name = "tomlplusplus" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/marzer/tomlplusplus/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d7c28b25374241afa08c60183717d3025aa8abffe1030928dc7e1d2143852da1
+  sha256: 2e246ee126cfb7bd68edd7285d5bb5c8c5296121ce809306ee71cfd6127c76a6
   patches:
     - 102.patch
 
@@ -32,7 +32,7 @@ about:
   home: https://github.com/marzer/tomlplusplus
   license: MIT
   license_file: LICENSE
-  summary: Header-only TOML config file parser and serializer for C++17 (and later!). 
+  summary: Header-only TOML config file parser and serializer for C++17 (and later!).
 
 extra:
   recipe-maintainers:
