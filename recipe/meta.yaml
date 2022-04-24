@@ -1,5 +1,5 @@
 {% set name = "tomlplusplus" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/marzer/tomlplusplus/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e05b2814b891e223d7546aa2408d6cba0628164a84ac453205c7743cb667b9cf
+  sha256: dae72714fc356ca1b019298d9e6275cc41ba95546ae722ccdb6795e92f47762e
 
 build:
   number: 0
