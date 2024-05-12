@@ -1,11 +1,11 @@
-About tomlplusplus
-==================
+About tomlplusplus-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tomlplusplus-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/marzer/tomlplusplus
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tomlplusplus-feedstock/blob/main/LICENSE.txt)
 
 Summary: Header-only TOML config file parser and serializer for C++17 (and later!).
 
