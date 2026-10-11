@@ -1,5 +1,5 @@
 {% set name = "tomlplusplus" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name }}
@@ -7,19 +7,26 @@ package:
 
 source:
   url: https://github.com/marzer/tomlplusplus/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fc1a5eb410f3c67e90e5ad1264a1386d020067cfb01b633cc8c0441789aa6cf2
+  sha256: 8517f65938a4faae9ccf8ebb36631a38c1cadfb5efa85d9a72e15b9e97d25155
+  patches:
+    - msvc-legacy-lambda.patch
 
 build:
   number: 0
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - ninja
     - cmake
 
 test:
+  requires:
+    - {{ compiler('cxx') }}  # [win]
+  files:
+    - test_for_each.cpp
   commands:
     - test -f ${PREFIX}/include/toml++/toml.h  # [not win]
     - test -f ${PREFIX}/lib/cmake/tomlplusplus/tomlplusplusConfig.cmake  # [not win]
@@ -36,3 +43,4 @@ extra:
   recipe-maintainers:
     - traversaro
     - h-vetinari
+    - timkpaine
