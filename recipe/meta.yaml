@@ -1,8 +1,7 @@
-{% set name = "tomlplusplus" %}
 {% set version = "3.5.1" %}
 
 package:
-  name: {{ name }}
+  name: tomlplusplus
   version: {{ version }}
 
 source:
