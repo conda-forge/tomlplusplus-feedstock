@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/marzer/tomlplusplus/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 4821c769370a6489b6a37814f16f3769eee0f2e733a5c129d5d99e2515a95c2b
-  patches:
-    - msvc-legacy-lambda.patch
 
 build:
   number: 0
