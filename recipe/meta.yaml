@@ -1,15 +1,12 @@
-{% set name = "tomlplusplus" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.1" %}
 
 package:
-  name: {{ name }}
+  name: tomlplusplus
   version: {{ version }}
 
 source:
   url: https://github.com/marzer/tomlplusplus/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 8517f65938a4faae9ccf8ebb36631a38c1cadfb5efa85d9a72e15b9e97d25155
-  patches:
-    - msvc-legacy-lambda.patch
+  sha256: 4821c769370a6489b6a37814f16f3769eee0f2e733a5c129d5d99e2515a95c2b
 
 build:
   number: 0
